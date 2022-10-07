@@ -1,0 +1,68 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans); 
+/* Web Font */
+*{
+    background-color:lightyellow;
+}
+body{
+    font-family: "Cambria", "Times New Roman";
+    /* Another Web Font*/
+    font-size: 17px;
+    text-align: center;
+    /* padding */
+    padding-left: 35%;
+    padding-right:30%;
+}
+table{
+    background-image: linear-gradient(red, rgb(165, 165, 8), rgb(165, 165, 8), brown);
+    /* linear gradient */
+}
+img{
+    width: 60%;
+     height: max(60%,100px); 
+     /* CSS Math Func (additional tag)*/
+    border-radius:60%; 
+    /* Rounded border */
+    border: solid 1px;
+}
+h1{
+    color:brown;
+    
+}
+b,h2{
+    color:darkblue;
+}
+#audio{
+    color:rgb(60, 100, 17);
+}
+.video{
+    color:darkorchid;
+}
+header,footer{
+    /* margin */
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+mark,cite{
+    color:darkgreen;
+    font-weight:800;
+}
+/* Various CSS Pseudo selectors : pseudo elements and pseudo classes */
+li::first-letter{
+    font-weight:bold;
+    font-size: large;
+}
+h2:hover{
+    color:green;
+    transition : 0.4s ; 
+    /* additional tag : transition */
+}
+/* Attribute selectors */
+h3[target="_Audio"]{
+    background-color:lightcyan;
+}
+/* CCombination selectors : font-size is applied to li, which is child of article tag */
+article > li{
+    font-size:19px;
+}
